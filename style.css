@@ -1,7 +1,7 @@
 /* Forzar la altura del nav y ajustar el padding */
 nav {
     background-color: #f8f9fa; /* Color claro original */
-    height: 100px; /* Forzar la altura del nav */
+    height: 85px; /* Forzar la altura del nav */
     padding: 0; /* Eliminar padding adicional */
     display: flex;
     align-items: center; /* Centrar verticalmente los elementos dentro del nav */
@@ -9,15 +9,18 @@ nav {
 
 /* Cambiar el tamaño de la fuente de los enlaces */
 .nav-link {
-    color: black; 
+    color: black;
     font-size: 1.25rem; /* Aumentar el tamaño de las letras */
     padding: 0 10px; /* Ajustar el padding horizontal */
     margin: 0; /* Eliminar márgenes adicionales */
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
 
-
+/* Efecto al pasar el cursor por encima */
 .nav-link:hover {
-    color: #666666; /* Color al pasar el ratón */
+    color: #0070B8; /* Color azul al pasar el ratón */
+    box-shadow: 0 0 5px #0070B8; /* Crea un recuadro azul claro alrededor del enlace */
+    border-radius: 5px; /* Redondea las esquinas del recuadro */
 }
 
 /* Ajustar el logo */
